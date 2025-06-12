@@ -104,8 +104,8 @@ Build a web UI using Streamlit
 
 🙋‍♂️ Author
 Gulfam Baig
-Email: your_email@example.com
-LinkedIn: linkedin.com/in/yourprofile
+Email: gulfambaig30@gmail.com
+LinkedIn: : linkedin.com/in/gulfam-baig
 
 📜 License
 This project is licensed under the MIT License.
