@@ -54,7 +54,7 @@ Clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/your-username/Emotion-Detection-from-Text.git
+git clone https://github.com/gulfambaig/Emotion-Detection-from-Text.git
 cd Emotion-Detection-from-Text
 (Optional) Create a virtual environment:
 
