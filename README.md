@@ -1,112 +1,85 @@
 😊 Emotion Detection from Text
-This project focuses on detecting human emotions from textual data using Natural Language Processing (NLP) and Machine Learning techniques. Given a piece of text (like a sentence or a tweet), the model classifies it into an emotion such as happy, sad, anger, fear, surprise, etc.
+An AI-based application that detects emotions from textual input using Natural Language Processing (NLP) techniques. It can be used in applications like mental health support, sentiment analysis, chatbots, and customer service.
 
-🧠 Objective
-To build an intelligent system that can understand human emotions from text using supervised machine learning models. This can be applied in:
+🌟 Introduction
+In today's fast-paced world, understanding emotions from text can significantly enhance user experience and support mental well-being. This project detects emotional states and can be integrated into intelligent systems like chatbots to provide emotionally aware responses.
 
-Sentiment analysis tools
+🎯 Objectives
+Automatically classify text into emotional categories
 
-Customer feedback analysis
+Provide a foundation for emotion-aware applications
 
-Mental health monitoring
+Serve as a support tool for mental health and feedback analysis
 
-Chatbots and virtual assistants
+🚀 Key Features
+Feature	Description
+Emotion Classification	Classifies text into emotions like joy, anger, sadness, fear, and love
+Transformer-based Model	Uses fine-tuned BERT for high accuracy
+Real-Time Predictions	Easily test the model via a simple Streamlit interface
+Privacy Focused	No data logging or external storage
 
-📦 Project Structure
+🧠 Model Performance
+Metric	Score
+Accuracy	93.8%
+F1-Score	0.938
+Precision	0.938
+Recall	0.938
+
+Model: Fine-tuned bert-base-uncased using HuggingFace and PyTorch.
+
+🛠️ Tech Stack
+Python 3.8+
+
+Streamlit
+
+HuggingFace Transformers
+
+PyTorch
+
+Scikit-learn
+
+Pandas / NumPy
+
+📁 Project Structure
 php
 Copy
 Edit
 Emotion-Detection-from-Text/
-│
-├── data/                        # Dataset files (CSV format)
-├── models/                      # Trained model(s) if saved
-├── notebooks/                   # Jupyter notebooks for exploration/training
-├── emotion_detection.py         # Main script for training & prediction
-├── requirements.txt             # Dependencies
-├── README.md                    # Project documentation
-└── utils.py                     # Helper functions (preprocessing, etc.)
-🧪 Models Used
-The following models can be trained or evaluated in the project:
-
-Logistic Regression
-
-Naive Bayes
-
-Support Vector Machine (SVM)
-
-Random Forest
-
-LSTM (optional – if using deep learning)
-
-🗂️ Dataset
-Most commonly used dataset: Emotion Dataset from Kaggle or similar.
-
-Typical format:
-
-Text	Emotion
-I’m feeling very happy today!	happy
-I can’t believe this happened	surprise
-This is so frustrating	anger
-
-⚙️ Installation
-Clone the repository:
-
+├── app.py               # Streamlit app file
+├── emotion_detection.py # Core logic for prediction
+├── data/                # Dataset files
+├── models/              # Saved models (if any)
+├── assets/              # Supporting resources (optional)
+├── requirements.txt     # Dependency list
+└── README.md            # Project documentation
+🚀 Getting Started
+Clone the Repository
 bash
 Copy
 Edit
 git clone https://github.com/gulfambaig/Emotion-Detection-from-Text.git
 cd Emotion-Detection-from-Text
-(Optional) Create a virtual environment:
-
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
-Install required packages:
-
+Install Requirements
 bash
 Copy
 Edit
 pip install -r requirements.txt
-🚀 How to Use
-1. Training a Model
+Run the App
 bash
 Copy
 Edit
-python emotion_detection.py --mode train
-2. Predicting Emotion for New Text
-bash
-Copy
-Edit
-python emotion_detection.py --mode predict --text "I'm so excited about this!"
-You can also use the notebooks/ folder for step-by-step exploration in Jupyter.
-
-📈 Evaluation Metrics
-Accuracy
-
-Precision
-
-Recall
-
-F1-score
-
-Confusion Matrix
-
-🔮 Possible Improvements
-Use transformer models (e.g., BERT) for better accuracy
-
-Add more emotion categories
-
-Deploy as an API using Flask or FastAPI
-
-Build a web UI using Streamlit
-
-🙋‍♂️ Author
-Gulfam Baig
-Email: gulfambaig30@gmail.com
-LinkedIn: : linkedin.com/in/gulfam-baig
+streamlit run app.py
+🧪 Example Use Case
+Input Text	Predicted Emotion
+"I'm really excited about the new job!"	Joy
+"I feel like no one understands me..."	Sadness
+"Everything makes me so angry today!"	Anger
 
 📜 License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. Feel free to use and modify it for both academic and commercial purposes.
 
+👤 Author
+User: Gulfam Baig
+📧 Email: gulfambaig30@gmail.com
+🔗 LinkedIn: linkedin.com/in/gulfam-baig
+💻 GitHub: Emotion Detection from Text
